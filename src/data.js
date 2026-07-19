@@ -1,38 +1,88 @@
 export const projects = [
   {
     title: "MutiClip",
-    desc: "Chrome extension that can copy and paste multiple things at a time...",
-    stack: ["JavaScript", "ManifestJSON", "CSS-in-JS"],
+    desc: "Chrome extension that lets users copy, store, and paste multiple clipboard items with a fast and intuitive workflow.",
+    stack: ["JavaScript", "Chrome Extension API", "HTML", "CSS"],
     tag: "Extension",
     year: "2026",
   },
   {
     title: "Noise Removal",
-    desc: "Basic image denoising techniques using Python and OpenCV...",
-    stack: ["Python","OpenCV","Matplotlib"],
-    tag: "Project",
+    desc: "Image denoising project implementing Gaussian, Median, and Bilateral filtering techniques using OpenCV with visualization through Matplotlib.",
+    stack: ["Python", "OpenCV", "NumPy", "Matplotlib"],
+    tag: "Computer Vision",
     year: "2026",
   },
   {
     title: "CareerBridge",
-    desc: "AI-powered internship application tracker with resume match scoring, ATS analysis, and application management built using React, FastAPI, and PostgreSQL",
-    stack: ["React", "FastAPI", "PostgreSQL"],
-    tag: "Web App",
+    desc: "AI-powered internship application tracker featuring ATS resume analysis, resume match scoring, authentication, application management, and analytics.",
+    stack: [
+      "React",
+      "FastAPI",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "JWT",
+      "Tailwind CSS"
+    ],
+    tag: "Full Stack",
     year: "2026",
   },
-
 ];
 
 export const skills = [
-  { cat: "Core", items: [["HTML / CSS", 96], ["JavaScript", 92], ["TypeScript", 88]] },
-  { cat: "Frameworks", items: [["React", 95], ["Next.js", 85], ["Vue", 72]] },
-  { cat: "Tooling", items: [["Webpack / Vite", 82], ["Testing (Vitest)", 76], ["CI/CD", 70]] },
-  { cat: "Design", items: [["Figma", 88], ["Motion / GSAP", 80], ["Design Systems", 90]] },
+  {
+    cat: "Languages",
+    items: [
+      ["Java", 92],
+      ["JavaScript", 90],
+      ["Python", 88],
+    ],
+  },
+  {
+    cat: "Frontend",
+    items: [
+      ["React", 92],
+      ["HTML/CSS", 95],
+      ["Tailwind CSS", 90],
+    ],
+  },
+  {
+    cat: "Backend",
+    items: [
+      ["FastAPI", 88],
+      ["SQLAlchemy", 85],
+      ["REST APIs", 90],
+    ],
+  },
+  {
+    cat: "Database & Tools",
+    items: [
+      ["PostgreSQL", 84],
+      ["Git & GitHub", 90],
+      ["Docker", 75],
+    ],
+  },
 ];
 
 export const timeline = [
-  { year: "2024–now", role: "Frontend Developer", co: "Self • Building Projects" },
-  { year: "2023–2024", role: "Learning JavaScript & React", co: "Self" },
-  { year: "2021–2023", role: "Senior Secondary Education", co: "Royal Public Sr. Sec. School, Gurugram" },
-  { year: "2019–2021", role: "Secondary Education", co: "Shanti Niketan Public School, Gurugram" },
+  {
+    year: "2026-Present",
+    role: "Full Stack Developer",
+    co: "Building CareerBridge & Personal Projects",
+  },
+  {
+    year: "2025-2026",
+    role: "Learning React, FastAPI & System Design",
+    co: "Self Learning",
+  },
+  {
+    year: "2023-Present",
+    role: "B.Tech CSE",
+    co: "University",
+  },
+  {
+    year: "2021-2023",
+    role: "Senior Secondary Education",
+    co: "Royal Public Sr. Sec. School, Gurugram",
+  },
 ];
