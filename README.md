@@ -1,16 +1,49 @@
-# React + Vite
+# 🌐 Modern Developer Portfolio (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A highly interactive and modern personal portfolio website built using **React.js**, featuring smooth animations, custom cursor effects, and a dynamic data-driven UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+[View Portfolio](https://mokshportfolio.vercel.app)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🎯 Custom animated cursor (ring + dot interaction)
+- 🧭 Smooth scrolling navigation
+- ⚡ Scroll-triggered animations using IntersectionObserver
+- 📊 Animated skill progress bars
+- 🧩 Modular, data-driven architecture
+- 🎨 Modern UI with gradients, glow effects & transitions
+- 📱 Fully responsive design
+- 🧑‍💻 Sections: Hero, Projects, Skills, About, Contact
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- React.js (Functional Components)
+- JavaScript (ES6+)
+- HTML5 (JSX)
+- CSS3 (Custom animations & styling)
+- IntersectionObserver API
+- Scroll APIs (`scrollIntoView`)
+
+---
+
+## 📁 Project Structure
+portfolio/
+├── src/
+│ ├── components/
+│ │ └── Portfolio.jsx
+│ ├── data/
+│ │ ├── projects.js
+│ │ ├── skills.js
+│ │ └── timeline.js
+│ ├── styles.css
+│ ├── App.js
+│ └── index.js
+├── public/
+└── package.json

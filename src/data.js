@@ -1,32 +1,26 @@
 export const projects = [
   {
-    title: "Pulse Design System",
-    desc: "A comprehensive component library built for scale...",
-    stack: ["React", "TypeScript", "Storybook", "CSS-in-JS"],
-    tag: "Design Systems",
-    year: "2025",
+    title: "MutiClip",
+    desc: "Chrome extension that can copy and paste multiple things at a time...",
+    stack: ["JavaScript", "ManifestJSON", "CSS-in-JS"],
+    tag: "Extension",
+    year: "2026",
   },
   {
-    title: "Cartograph",
-    desc: "Interactive geospatial analytics dashboard...",
-    stack: ["Next.js", "D3.js", "WebSockets", "MapboxGL"],
-    tag: "Dashboard",
-    year: "2024",
+    title: "Noise Removal",
+    desc: "Basic image denoising techniques using Python and OpenCV...",
+    stack: ["Python","OpenCV","Matplotlib"],
+    tag: "Project",
+    year: "2026",
   },
   {
-    title: "Folio CMS",
-    desc: "Headless CMS with a custom rich-text editor...",
-    stack: ["React", "TipTap", "GraphQL", "Framer Motion"],
+    title: "CareerBridge",
+    desc: "AI-powered internship application tracker with resume match scoring, ATS analysis, and application management built using React, FastAPI, and PostgreSQL",
+    stack: ["React", "FastAPI", "PostgreSQL"],
     tag: "Web App",
-    year: "2024",
+    year: "2026",
   },
-  {
-    title: "Lumen UI",
-    desc: "Open-source collection...",
-    stack: ["React", "CSS Animations", "Vite"],
-    tag: "Open Source",
-    year: "2023",
-  },
+
 ];
 
 export const skills = [

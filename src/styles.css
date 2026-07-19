@@ -819,3 +819,9 @@ footer {
     left: -20px;
   }
 }
+
+@media (max-width: 420px){
+  .cursor-ring{
+    display: none;
+  }
+}
