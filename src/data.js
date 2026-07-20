@@ -5,6 +5,7 @@ export const projects = [
     stack: ["JavaScript", "Chrome Extension API", "HTML", "CSS"],
     tag: "Extension",
     year: "2026",
+    link:"https://github.com/MokshManral/MultiClip-Extension"
   },
   {
     title: "Noise Removal",
@@ -12,6 +13,7 @@ export const projects = [
     stack: ["Python", "OpenCV", "NumPy", "Matplotlib"],
     tag: "Computer Vision",
     year: "2026",
+    link:'https://github.com/MokshManral/NoiseRemoval'
   },
   {
     title: "CareerBridge",
@@ -26,6 +28,7 @@ export const projects = [
     ],
     tag: "Full Stack",
     year: "2026",
+    link:"https://github.com/MokshManral/CareerBridge"
   },
 ];
 

@@ -25,7 +25,7 @@ const Works = () => {
                   </div>
                   <div className="work-right">
                     <span className="work-year">{p.year}</span>
-                    <div className="work-arrow">↗</div>
+                    <button key={p.id} onClick={() => window.location.href = p.link} className="work-arrow">↗</button>
                   </div>
                 </div>
               ))}
