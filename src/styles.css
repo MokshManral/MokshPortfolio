@@ -826,3 +826,221 @@ footer {
     display: none;
   }
 }
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+/* Large Tablets */
+@media (max-width: 992px) {
+  .shell,
+  .nav-inner {
+    padding: 0 30px;
+  }
+
+  .hero {
+    padding: 150px 0 90px;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .about-grid {
+    gap: 50px;
+  }
+
+  .contact-card {
+    padding: 48px 36px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+
+  body {
+    cursor: auto;
+  }
+
+  .cursor-ring,
+  .cursor-dot {
+    display: none;
+  }
+
+  .shell,
+  .nav-inner {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+  }
+
+  .nav-badge {
+    display: none;
+  }
+
+  .hero {
+    padding: 120px 0 70px;
+  }
+
+  .hero-desc {
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .hero-stats {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-item {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .work-right {
+    display: none;
+  }
+
+  .contact-inner {
+    flex-direction: column;
+  }
+
+  .contact-links {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .contact-card {
+    padding: 32px 24px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+  section {
+    padding: 70px 0;
+  }
+
+  .hero-name {
+    font-size: clamp(42px, 13vw, 72px);
+    letter-spacing: -1px;
+  }
+
+  .hero-desc {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primary,
+  .btn-ghost {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .stat-num {
+    font-size: 34px;
+  }
+
+  .work-title {
+    font-size: 26px;
+  }
+
+  .work-desc {
+    max-width: 100%;
+  }
+
+  .skill-block {
+    padding: 24px;
+  }
+
+  .skill-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .skill-bar-track {
+    max-width: 100%;
+  }
+
+  .tl-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .contact-heading {
+    line-height: 1.2;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 420px) {
+
+  .shell,
+  .nav-inner {
+    padding: 0 16px;
+  }
+
+  .hero {
+    padding: 105px 0 60px;
+  }
+
+  .hero-name {
+    font-size: 38px;
+  }
+
+  .work-title {
+    font-size: 22px;
+  }
+
+  .contact-card {
+    padding: 24px 18px;
+  }
+
+  .contact-link {
+    font-size: 11px;
+    padding: 10px 12px;
+  }
+
+  .cursor-ring,
+  .cursor-dot {
+    display: none;
+  }
+}

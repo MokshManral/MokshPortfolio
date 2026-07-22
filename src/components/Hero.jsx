@@ -21,7 +21,7 @@ const Hero = () => {
               <a href="#contact" className="btn-ghost" onClick={e => { e.preventDefault(); go("contact"); }}>Get in touch ↗</a>
             </div>
             <div className="hero-stats">
-              {[["0", "Years of exp."], ["0+", "Projects shipped"], ["0", "GitHub stars"]].map(([n, l]) => (
+              {[["4th", "Year Student"], ["Learning", "Through Projects"], ["Much", "Things to learn"]].map(([n, l]) => (
                 <div key={l}><span className="stat-num">{n}</span><div className="stat-label">{l}</div></div>
               ))}
             </div>
