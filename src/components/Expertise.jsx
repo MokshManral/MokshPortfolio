@@ -17,9 +17,7 @@ const Expertise = () => {
       <div className="shell">
         <section id="skills" ref={skillsRef}>
           <div className="sec-head reveal">
-            <span className="sec-num">02</span>
             <span className="sec-label">Expertise</span>
-            <span className="sec-line" />
           </div>
           <div className="skills-grid reveal">
             {skills.map(g => (

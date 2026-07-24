@@ -1,35 +1,63 @@
-import React from 'react'
+import React from "react";
+import "../styles.css";
+import { heroData } from "../data";
 
 const Hero = () => {
-  const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  const go = (id) =>
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+    });
+
   return (
-    <>
-      <div className="hero-wrap">
-        <div className="glow-orb glow-orb-1" />
-        <div className="glow-orb glow-orb-2" />
-        <div className="shell">
-          <div className="hero" id="home">
-            <div className="hero-eyebrow"><span className="eyebrow-line" />Frontend Developer · Gurugram</div>
-            <h1 className="hero-name">
-              Building<br />
-              <span className="l2">Interfaces</span><br />
-              <span className="grad">Worth Feeling</span>
-            </h1>
-            <p className="hero-desc">I craft pixel-perfect, performant web experiences — from design systems that scale to dashboards that delight.</p>
-            <div className="hero-actions">
-              <a href="#work" className="btn-primary" onClick={e => { e.preventDefault(); go("work"); }}>View my work →</a>
-              <a href="#contact" className="btn-ghost" onClick={e => { e.preventDefault(); go("contact"); }}>Get in touch ↗</a>
-            </div>
-            <div className="hero-stats">
-              {[["4th", "Year Student"], ["Learning", "Through Projects"], ["Much", "Things to learn"]].map(([n, l]) => (
-                <div key={l}><span className="stat-num">{n}</span><div className="stat-label">{l}</div></div>
-              ))}
-            </div>
+    <div className="hero-wrap">
+      <div className="glow-orb glow-orb-1" />
+      <div className="glow-orb glow-orb-2" />
+
+      <div className="shell">
+        <section className="hero" id="home">
+          <div className="hero-eyebrow">
+            <span className="eyebrow-line" />
+            {heroData.location}
           </div>
-        </div>
+
+          <h1 className="hero-name">
+            {heroData.title.line1}
+            <br />
+            <span className="l2">{heroData.title.line2}</span>
+            <br />
+            <span className="grad">{heroData.title.highlight}</span>
+          </h1>
+
+          <p className="hero-desc">{heroData.description}</p>
+
+          <div className="hero-actions">
+            {heroData.buttons.map(({ label, target, className }) => (
+              <a
+                key={target}
+                href={`#${target}`}
+                className={className}
+                onClick={(e) => {
+                  e.preventDefault();
+                  go(target);
+                }}
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+
+          <div className="hero-stats">
+            {heroData.stats.map(({ value, label }) => (
+              <div key={label}>
+                <span className="stat-num">{value}</span>
+                <div className="stat-label">{label}</div>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
 export default Hero;

@@ -7,11 +7,9 @@ const Works = () => {
         <div className="shell">
           <section id="work">
             <div className="sec-head reveal">
-              <span className="sec-num">01</span>
               <span className="sec-label">Selected Work</span>
-              <span className="sec-line" />
             </div>
-            <div className="work-list">
+            <div className="work-list reveal">
               {projects.map((p, i) => (
                 <div className="work-item reveal" key={p.title}>
                   <div>
