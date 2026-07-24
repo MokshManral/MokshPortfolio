@@ -332,7 +332,7 @@ export const contactData = {
     },
     {
       label: "linkedin.com/in/mokshmanral",
-      href: "https://linkedin.com/in/mokshmanral",
+      href: "https://www.linkedin.com/in/mokshsingh/",
       icon: FaLinkedin,
     },
   ],
