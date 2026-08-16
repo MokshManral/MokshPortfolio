@@ -5,8 +5,8 @@ export default function Timeline() {
   return (
     <div className="shell">
       <section id="journey">
-          <span className="sec-label reveal">My journey</span>
           <div className="sec-head reveal">
+            <span className="sec-label">My journey</span>
           </div>
           <ul className="gitlog reveal">
             {

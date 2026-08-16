@@ -5,8 +5,8 @@ const Values = () => {
   return (
     <div className="shell">
       <section id="values">
-        <div className="sec-head">
-          <span className='sec-label reveal'>My values</span>
+        <div className="sec-head reveal">
+          <span className='sec-label'>My values</span>
         </div>
         <div className="listgrid reveal">
           {values.map((item, i) => (

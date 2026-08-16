@@ -1,0 +1,180 @@
+/* Focused layout and interaction refinements. */
+.stack-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.stack-col {
+  display: grid;
+  grid-template-columns: minmax(130px, 23%) 1fr;
+  align-items: center;
+  gap: 24px;
+  min-height: 76px;
+  padding: 16px 0;
+  border: 0;
+  border-bottom: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.stack-col:last-child { border-bottom: 0; }
+.stack-col:hover { transform: none; background: transparent; }
+
+.stack-head {
+  position: relative;
+  margin: 0;
+  padding-left: 17px;
+  color: var(--ink);
+}
+
+.stack-head::before {
+  content: '';
+  position: absolute;
+  top: .2em;
+  bottom: .2em;
+  left: 0;
+  width: 2px;
+  background: linear-gradient(var(--accent), var(--accent-2));
+  border-radius: 2px;
+}
+
+.stack-col .pill {
+  border-color: transparent;
+  background: transparent;
+}
+
+.stack-col .pill:hover {
+  border-color: transparent;
+  background: transparent;
+  color: var(--accent-2);
+}
+
+/* Keep the project colour language, without the list-divider outlines. */
+.work-list { border-top: 0; }
+
+.work-item {
+  margin-bottom: 12px;
+  padding: 35px 16px;
+  border-bottom: 0;
+  border-radius: 8px;
+  background: rgba(167, 139, 250, .035);
+  transition: background .25s ease;
+}
+
+.work-item:nth-child(even) { background: rgba(167, 139, 250, .035); }
+
+.work-item:hover {
+  background: rgba(167, 139, 250, .09);
+}
+
+.work-item:nth-child(even):hover { background: rgba(167, 139, 250, .09); }
+
+.work-item::before {
+  display: block;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform .35s var(--ease), opacity .2s ease;
+}
+.work-item:hover::before { opacity: 1; transform: scaleY(1); }
+.work-item:hover { padding-left: 16px; }
+.work-item:hover .work-arrow { transform: none; }
+
+/* Inner content uses layered surfaces instead of outlines. */
+.skills-grid { background: transparent; }
+.skill-block,
+.contact-card,
+.fact,
+.listgrid > div,
+.feed,
+.faq-item,
+.faq-item:last-child,
+.contact-link,
+.pill,
+.tag,
+.avail-pill {
+  border-color: transparent;
+}
+
+.skill-block { background: rgba(255, 255, 255, .035); }
+.skill-block:hover { background: rgba(167, 139, 250, .09); }
+.listgrid > div { background: rgba(255, 255, 255, .035); }
+.fact { background: rgba(69, 213, 194, .055); }
+.feed { background: rgba(9, 12, 18, .78); }
+.contact-card { background: rgba(167, 139, 250, .07); }
+.contact-card { border-color: var(--line); }
+
+#why .listgrid > div,
+#why .listgrid > div:hover {
+  align-items: center;
+  min-height: 54px;
+  border: 0;
+  background: transparent;
+}
+
+#why .listgrid > div:hover {
+  background: rgba(167, 139, 250, .09);
+}
+.contact-link { background: rgba(11, 12, 16, .34); }
+.faq-item { background: transparent; border-top-color: var(--line); }
+.faq-item:last-child { border-bottom-color: var(--line); }
+
+#interests .reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+#interests .tag,
+#interests .tag:hover {
+  display: inline-flex;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  transform: none;
+  transition: none;
+}
+
+#interests .tag:hover { background: transparent; }
+
+/* Section rhythm: one quiet divider between each content block. */
+.hero-wrap + .shell section,
+.shell + .shell section {
+  border-top: 0;
+  background-image: linear-gradient(90deg, transparent, var(--line) 10%, var(--line) 90%, transparent);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+}
+
+/* A clear, consistent keyboard path across the portfolio. */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.sec-label { text-shadow: 0 0 18px rgba(69, 213, 194, .2); }
+.work-item { overflow: hidden; }
+.contact-link:hover .icon { transform: translateY(-1px); }
+.contact-link .icon { transition: transform .2s var(--ease); }
+
+@media (max-width: 560px) {
+  .hero-wrap + .shell section,
+  .shell + .shell section { background-size: 100% 1px; }
+}
+.faq-item + .faq-item { margin-top: 3px; }
+
+.timeline,
+.gitlog { border-left-color: var(--line); }
+
+@media (max-width: 560px) {
+  .stack-col { grid-template-columns: 1fr; gap: 14px; padding: 16px 0; }
+}

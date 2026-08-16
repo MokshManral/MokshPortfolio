@@ -1,0 +1,43 @@
+/* Original portfolio type pairing, applied to the unified visual system. */
+body {
+  font-family: 'Geist Mono', monospace;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.nav-logo,
+.hero-name,
+.contact-heading,
+.stat-num,
+.work-title,
+.quote {
+  font-family: 'Instrument Serif', serif;
+}
+
+.nav-links a,
+.nav-badge,
+.sec-label,
+.work-tag,
+.skill-cat,
+.stack-head,
+.stat-label,
+.hero-eyebrow,
+.btn-primary,
+.btn-ghost,
+.avail-pill,
+.tl-year,
+.tl-co,
+.commit-hash,
+.pill,
+.work-idx,
+.work-year,
+.skill-pct,
+.eyebrow,
+.feed-head,
+.feed li,
+.tag,
+.faq-item summary::after,
+.contact-link,
+footer {
+  font-family: 'Geist Mono', monospace;
+}

@@ -33,7 +33,7 @@ import {
 import { MdApi,MdSecurity,MdEmail } from "react-icons/md";
 
 export const headerData = {
-  logo: "Moksh Singh",
+  logo: "Moksh Manral",
   badge: "Available for Work",
   links: [
     { id: "about", label: "About" },

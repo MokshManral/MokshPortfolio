@@ -23,7 +23,7 @@ const Contact = () => {
             </h2>
 
             <div className="contact-links">
-              {contactData.links.map(({ icon: Icon, label, href }) => (
+              {contactData.links.map(({ icon, label, href }) => (
                 <a
                   key={label}
                   className="contact-link"
@@ -31,7 +31,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Icon className="icon" />
+                  {React.createElement(icon, { className: "icon" })}
                   <span>{label}</span>
                 </a>
               ))}

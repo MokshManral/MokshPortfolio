@@ -23,7 +23,7 @@ const Works = () => {
                   </div>
                   <div className="work-right">
                     <span className="work-year">{p.year}</span>
-                    <button key={p.id} onClick={() => window.location.href = p.link} className="work-arrow">↗</button>
+                    <a href={p.link} target="_blank" rel="noreferrer" className="work-arrow" aria-label={`Open ${p.title} project`}>↗</a>
                   </div>
                 </div>
               ))}
