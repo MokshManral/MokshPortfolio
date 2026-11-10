@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles.css";
 import { stack } from "../data";
 
@@ -20,9 +19,8 @@ function TechStack() {
                 <span className="stack-head">{col.heading}</span>
 
                 <div className="stack-pills">
-                  {col.pills.map(({ name, icon }) => (
+                  {col.pills.map(({ name }) => (
                     <span className="pill" key={name}>
-                      {React.createElement(icon, { className: "pill-icon" })}
                       {name}
                     </span>
                   ))}

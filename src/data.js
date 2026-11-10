@@ -1,37 +1,3 @@
-import {
-  FaCode,
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-  FaGitAlt,
-  FaDocker,
-  FaPython,
-  FaJava,
-  FaGithub,
-  FaLinkedin
-} from "react-icons/fa";
-
-import {
-  SiFastapi,
-  SiPostgresql,
-  SiMongodb,
-  SiMysql,
-  SiGithub,
-  SiPython,
-  SiJavascript,
-  SiHtml5,
-  SiCss,
-  SiReact,
-  SiTailwindcss,
-  SiGit,
-  SiDocker,
-  SiPostman,
-} from "react-icons/si";
-
-import { MdApi,MdSecurity,MdEmail } from "react-icons/md";
-
 export const headerData = {
   logo: "Moksh Manral",
   badge: "Available for Work",
@@ -44,16 +10,16 @@ export const headerData = {
 };
 
 export const heroData = {
-  location: "Backend & Full Stack Developer · Gurugram",
+  location: "Full Stack Developer • Gurugram, India",
 
   title: {
-    line1: "Building",
-    line2: "Software",
-    highlight: "That Solves Problems",
+    line1: "Crafting",
+    line2: "Digital",
+    highlight: "Products That Work",
   },
 
   description:
-    "Computer Science undergraduate passionate about building scalable backend systems, modern web applications, and continuously improving through real-world projects.",
+    "I build modern web experiences and backend systems that balance performance, usability, and real-world impact. My focus is on clean architecture, product thinking, and turning ideas into reliable software.",
 
   buttons: [
     {
@@ -71,11 +37,15 @@ export const heroData = {
   stats: [
     {
       value: "4th",
-      label: "Year Student",
+      label: "Year CS Student",
     },
     {
-      value: "∞",
-      label: "Learning Mindset",
+      value: "06+",
+      label: "Projects Built",
+    },
+    {
+      value: "100%",
+      label: "Curiosity",
     },
   ],
 };
@@ -130,80 +100,80 @@ export const stack = [
   {
     heading: "Languages",
     pills: [
-      { name: "Java", icon: FaJava },
-      { name: "Python", icon: SiPython },
-      { name: "JavaScript", icon: SiJavascript },
-      { name: "SQL", icon: SiPostgresql },
-      { name: "HTML", icon: SiHtml5 },
-      { name: "CSS", icon: SiCss },
+      { name: "Java" },
+      { name: "Python" },
+      { name: "JavaScript" },
+      { name: "SQL" },
+      { name: "HTML" },
+      { name: "CSS" },
     ],
   },
   {
     heading: "Frontend",
     pills: [
-      { name: "React", icon: SiReact },
-      { name: "Tailwind CSS", icon: SiTailwindcss },
-      { name: "HTML5", icon: SiHtml5 },
-      { name: "CSS3", icon: SiCss },
+      { name: "React" },
+      { name: "Tailwind CSS" },
+      { name: "HTML5" },
+      { name: "CSS3" },
     ],
   },
   {
     heading: "Backend",
     pills: [
-      { name: "FastAPI", icon: SiFastapi },
-      { name: "REST API", icon: MdApi },
-      { name: "JWT", icon: MdSecurity },
-      { name: "SQLAlchemy", icon: SiPython },
-      { name: "Pydantic", icon: SiPython },
+      { name: "FastAPI" },
+      { name: "REST API" },
+      { name: "JWT" },
+      { name: "SQLAlchemy" },
+      { name: "Pydantic" },
     ],
   },
   {
     heading: "Database",
-    pills: [{ name: "PostgreSQL", icon: SiPostgresql }],
+    pills: [{ name: "PostgreSQL" }],
   },
   {
     heading: "Tools",
     pills: [
-      { name: "Git", icon: SiGit },
-      { name: "GitHub", icon: SiGithub },
-      { name: "Docker", icon: SiDocker },
-      { name: "Postman", icon: SiPostman },
-      { name: "VS Code", icon: FaCode },
+      { name: "Git" },
+      { name: "GitHub" },
+      { name: "Docker" },
+      { name: "Postman" },
+      { name: "VS Code" },
     ],
   },
 ];
 
 export const projects = [
   {
-    title: "MutiClip",
-    desc: "Chrome extension that lets users copy, store, and paste multiple clipboard items with a fast and intuitive workflow.",
-    stack: ["JavaScript", "Chrome Extension API", "HTML", "CSS"],
-    tag: "Extension",
+    title: "TailorCV",
+    desc: "A resume optimization platform that helps users tailor their CVs for specific roles by improving relevance, structure, and presentation.",
+    stack: ["React", "FastAPI", "PostgreSQL", "JWT", "Tailwind CSS"],
+    tag: "Productivity Tool",
     year: "2026",
-    link: "https://github.com/MokshManral/MultiClip-Extension"
+    link: "https://tailor-cv-jet.vercel.app/",
   },
   {
-    title: "Noise Removal",
-    desc: "Image denoising project implementing Gaussian, Median, and Bilateral filtering techniques using OpenCV with visualization through Matplotlib.",
+    title: "Image Denoising Toolkit",
+    desc: "A computer-vision project that compares Gaussian, Median, and Bilateral filtering techniques for noise reduction and visual quality analysis.",
     stack: ["Python", "OpenCV", "NumPy", "Matplotlib"],
     tag: "Computer Vision",
     year: "2026",
-    link: 'https://github.com/MokshManral/NoiseRemoval'
+    link: "https://github.com/MokshManral/NoiseRemoval",
   },
   {
     title: "CareerBridge",
-    desc: "AI-powered internship application tracker featuring ATS resume analysis, resume match scoring, authentication, application management, and analytics.",
+    desc: "An AI-assisted internship tracker for resume matching, job tracking, account management, and actionable application insights for students.",
     stack: [
       "React",
       "FastAPI",
       "PostgreSQL",
       "SQLAlchemy",
       "JWT",
-      "Tailwind CSS"
+      "Tailwind CSS",
     ],
-    tag: "Full Stack",
+    tag: "Full Stack Product",
     year: "2026",
-    link: "https://github.com/MokshManral/CareerBridge"
+    link: "https://github.com/MokshManral/CareerBridge",
   },
 ];
 
@@ -246,14 +216,14 @@ export const whyWorkWithMe = {
 };
 
 export const currentLearning = [
-  { icon: "⚛️", title: "Advanced React" },
-  { icon: "🏗️", title: "Backend Architecture" },
-  { icon: "📊", title: "Data Engineering Fundamentals" },
-  { icon: "🗄️", title: "SQL Optimization" },
-  { icon: "🐳", title: "Docker" },
-  { icon: "🔐", title: "Authentication Systems" },
-  { icon: "🧠", title: "System Design Basics" },
-  { icon: "🧩", title: "Data Structures & Algorithms" },
+  "Advanced React",
+  "Backend Architecture",
+  "Data Engineering Fundamentals",
+  "SQL Optimization",
+  "Docker",
+  "Authentication Systems",
+  "System Design Basics",
+  "Data Structures & Algorithms",
 ];
 
 export const skills = [
@@ -292,21 +262,21 @@ export const skills = [
 ];
 
 export const futureGoals = [
-  { icon: "🏗️", title: "Master System Design" },
-  { icon: "⚙️", title: "Become a Backend Engineer" },
-  { icon: "☁️", title: "Learn Cloud Technologies (AWS)" },
-  { icon: "🌍", title: "Contribute to Open Source" },
-  { icon: "🚀", title: "Build SaaS Products" },
-  { icon: "💼", title: "Crack Software Engineering Interviews" },
-  { icon: "📊", title: "Become Proficient in Data Engineering" },
+  "Master System Design",
+  "Become a Backend Engineer",
+  "Learn Cloud Technologies (AWS)",
+  "Contribute to Open Source",
+  "Build SaaS Products",
+  "Crack Software Engineering Interviews",
+  "Become Proficient in Data Engineering",
 ];
 
 export const funFacts = [
-  { icon: "☕", text: "Coffee-powered coding sessions" },
-  { icon: "💻", text: "Love building projects from scratch" },
-  { icon: "🧩", text: "Enjoy debugging challenging problems" },
-  { icon: "📚", text: "Always learning something new" },
-  { icon: "🚀", text: "Passionate about creating useful software" },
+  "Coffee-powered coding sessions",
+  "Love building projects from scratch",
+  "Enjoy debugging challenging problems",
+  "Always learning something new",
+  "Passionate about creating useful software",
 ];
 
 export const contactData = {
@@ -323,17 +293,14 @@ export const contactData = {
     {
       label: "mokshmanral628@gmail.com",
       href: "mailto:mokshmanral628@gmail.com",
-      icon: MdEmail,
     },
     {
       label: "github.com/MokshManral",
       href: "https://github.com/MokshManral",
-      icon: FaGithub,
     },
     {
       label: "linkedin.com/in/mokshmanral",
       href: "https://www.linkedin.com/in/mokshsingh/",
-      icon: FaLinkedin,
     },
   ],
 };

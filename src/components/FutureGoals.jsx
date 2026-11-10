@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles.css";
 import { futureGoals } from "../data";
 
@@ -11,9 +10,8 @@ const FutureGoals = () => {
           </div>
 
           <div className="listgrid reveal">
-            {futureGoals.map(({ icon, title }) => (
+            {futureGoals.map((title) => (
               <div className="goal-card reveal" key={title}>
-                <span>{icon}</span>
                 <span>{title}</span>
               </div>
             ))}

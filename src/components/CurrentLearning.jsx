@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles.css";
 import { currentLearning } from "../data";
 
@@ -11,9 +10,9 @@ const CurrentLearning = () => {
           <span className="sec-line" />
         </div>
         <div className="listgrid">
-          {currentLearning.map(({ icon, title }) => (
+          {currentLearning.map((title) => (
             <div className="reveal" key={title}>
-              <span>{icon}</span> {title}
+              {title}
             </div>
           ))}
         </div>

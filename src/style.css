@@ -1,0 +1,22 @@
+:root {
+  /* Primary palette */
+  --black: #0A0A0A;
+  --red: #C1122F;
+  --dark-red: #780019;
+  --gold: #D4AF37;
+
+  /* Dark theme */
+  --bg-dark: #0A0A0A;
+  --surface-dark: #1B1B1B;
+  --text-dark: #F8F5EF;
+
+  /* Light theme */
+  --bg-light: #F8F5EF;
+  --surface-light: #F2DDE0;
+  --text-light: #171717;
+  --gold-light: #B58A24;
+
+  /* Additional colours */
+  --white: #FFFFFF;
+  --muted: #888888;
+}

@@ -1,7 +1,5 @@
 import './styles.css';
-import './typography.css';
-import './polish.css';
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Works from './components/Works';
@@ -26,17 +24,23 @@ import CurrentLearning from './components/CurrentLearning.jsx';
 function App() {
   const ringRef = useRef(null);
   const dotRef = useRef(null);
+  const [theme, setTheme] = useState('dark');
 
   useCustomCursor(ringRef, dotRef)
 
   useRevealAnimation();
+
+  useEffect(() => {
+    document.body.classList.toggle('theme-light', theme === 'light');
+    document.body.classList.toggle('theme-dark', theme === 'dark');
+  }, [theme]);
 
   return (
     <>
       <div ref={ringRef} className="cursor-ring"></div>
       <div ref={dotRef} className="cursor-dot"></div>
 
-      <Header />
+      <Header theme={theme} setTheme={setTheme} />
       <Hero />
       <About />
       <Timeline />

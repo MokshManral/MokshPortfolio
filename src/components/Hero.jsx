@@ -10,40 +10,51 @@ const Hero = () => {
 
   return (
     <div className="hero-wrap">
-      <div className="glow-orb glow-orb-1" />
-      <div className="glow-orb glow-orb-2" />
-
       <div className="shell">
         <section className="hero" id="home">
-          <div className="hero-eyebrow">
-            <span className="eyebrow-line" />
-            {heroData.location}
-          </div>
+          <div className="hero-grid">
+            <div className="hero-copy">
+              <div className="hero-eyebrow">
+                <span className="eyebrow-line" />
+                {heroData.location}
+              </div>
 
-          <h1 className="hero-name">
-            {heroData.title.line1}
-            <br />
-            <span className="l2">{heroData.title.line2}</span>
-            <br />
-            <span className="grad">{heroData.title.highlight}</span>
-          </h1>
+              <h1 className="hero-name">
+                {heroData.title.line1}
+                <br />
+                <span className="l2">{heroData.title.line2}</span>
+                <br />
+                <span className="grad">{heroData.title.highlight}</span>
+              </h1>
 
-          <p className="hero-desc">{heroData.description}</p>
+              <p className="hero-desc">{heroData.description}</p>
 
-          <div className="hero-actions">
-            {heroData.buttons.map(({ label, target, className }) => (
-              <a
-                key={target}
-                href={`#${target}`}
-                className={className}
-                onClick={(e) => {
-                  e.preventDefault();
-                  go(target);
-                }}
-              >
-                {label}
-              </a>
-            ))}
+              <div className="hero-actions">
+                {heroData.buttons.map(({ label, target, className }) => (
+                  <a
+                    key={target}
+                    href={`#${target}`}
+                    className={className}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      go(target);
+                    }}
+                  >
+                    {label}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <aside className="hero-panel reveal">
+              <div className="panel-badge">Focused On</div>
+              <h2 className="panel-title">Full-stack products that feel sharp and work reliably.</h2>
+              <ul className="panel-list">
+                <li>Backend architecture</li>
+                <li>Modern frontend experiences</li>
+                <li>Scalable product thinking</li>
+              </ul>
+            </aside>
           </div>
 
           <div className="hero-stats">

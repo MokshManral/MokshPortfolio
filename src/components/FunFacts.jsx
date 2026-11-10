@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles.css";
 import { funFacts } from "../data";
 
@@ -11,9 +10,8 @@ const FunFacts = () => {
           </div>
 
           <div className="facts reveal">
-            {funFacts.map(({ icon, text }) => (
+            {funFacts.map((text) => (
               <div className="fact reveal" key={text}>
-                <span>{icon}</span>
                 <span>{text}</span>
               </div>
             ))}

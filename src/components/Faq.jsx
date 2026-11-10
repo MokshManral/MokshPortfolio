@@ -11,11 +11,10 @@ const Faq = () => {
           </div>
 
           <div className="reveal">
-            {faqData.map((faq, index) => (
+            {faqData.map((faq) => (
               <details
                 className="faq-item"
                 key={faq.question}
-                open={index === 0}
               >
                 <summary>{faq.question}</summary>
                 <p>{faq.answer}</p>
