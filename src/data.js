@@ -1,25 +1,24 @@
 export const headerData = {
   logo: "Moksh Manral",
-  badge: "Available for Work",
+  badge: "Open to Opportunities",
   links: [
     { id: "about", label: "About" },
-    { id: "work", label: "Work" },
-    { id: "skills", label: "Skills" },
+    { id: "work", label: "Projects" },
     { id: "contact", label: "Contact" },
   ],
 };
 
 export const heroData = {
-  location: "Full Stack Developer • Gurugram, India",
+  location: "Aspiring Data Engineer • Gurugram, India",
 
   title: {
-    line1: "Crafting",
-    line2: "Digital",
-    highlight: "Products That Work",
+    line1: "Building",
+    line2: "Data",
+    highlight: "Driven Solutions",
   },
 
   description:
-    "I build modern web experiences and backend systems that balance performance, usability, and real-world impact. My focus is on clean architecture, product thinking, and turning ideas into reliable software.",
+    "I'm a Computer Science Engineering student passionate about Data Engineering, backend development, and building practical software. I work with Python, SQL, ETL pipelines, FastAPI, and modern web technologies to turn ideas and raw data into useful solutions.",
 
   buttons: [
     {
@@ -35,93 +34,82 @@ export const heroData = {
   ],
 
   stats: [
-    {
-      value: "4th",
-      label: "Year CS Student",
-    },
-    {
-      value: "06+",
-      label: "Projects Built",
-    },
-    {
-      value: "100%",
-      label: "Curiosity",
-    },
+    { value: "4th", label: "Year CSE Student" },
+    { value: "04+", label: "Featured Projects" },
+    { value: "100%", label: "Learning Mindset" },
   ],
 };
 
 export const timeline = [
   {
-    year: "2026-Present",
+    year: "2026 - Present",
+    role: "Data Engineering & Backend Development",
+    co: "Building ShopFlow Analytics and practical data pipelines",
+  },
+  {
+    year: "2025 - 2026",
     role: "Full Stack Developer",
-    co: "Building CareerBridge & Personal Projects",
+    co: "Building AI-powered and web-based applications",
   },
   {
-    year: "2025-2026",
-    role: "Learning React, FastAPI & System Design",
-    co: "Self Learning",
-  },
-  {
-    year: "2023-Present",
-    role: "B.Tech CSE",
+    year: "2023 - Present",
+    role: "B.Tech Computer Science Engineering",
     co: "University",
   },
   {
-    year: "2021-2023",
+    year: "2021 - 2023",
     role: "Senior Secondary Education",
     co: "Royal Public Sr. Sec. School, Gurugram",
   },
 ];
 
 export const journey = [
-  ["a1f9c2", "Started with HTML, CSS, JavaScript"],
+  ["a1f9c2", "Started with HTML, CSS and JavaScript"],
   ["b3e07d", "Built responsive websites"],
-  ["c58a11", "Learned React"],
-  ["d9021f", "Built portfolio website"],
-  ["e44b7c", "Started backend development"],
-  ["f10d3a", "Learned FastAPI"],
-  ["a77c9e", "Built authentication APIs"],
-  ["b2f4d8", "Integrated PostgreSQL"],
-  ["c9e1a0", "Building CareerBridge"],
-  ["d6b8f2", "Learning data engineering"],
-  ["HEAD", "Preparing for software engineering internships"],
-];
-
-export const values = [
-  "Always Learning",
-  "Build Before Perfect",
-  "Write Maintainable Code",
-  "Solve Real Problems",
-  "Stay Consistent",
-  "Keep Improving",
+  ["c58a11", "Learned React and component architecture"],
+  ["d9021f", "Started backend development with Python"],
+  ["e44b7c", "Learned FastAPI and REST APIs"],
+  ["f10d3a", "Implemented authentication with JWT"],
+  ["a77c9e", "Integrated PostgreSQL and SQLAlchemy"],
+  ["b2f4d8", "Built AI-powered web applications"],
+  ["c9e1a0", "Developed TailorCV"],
+  ["d6b8f2", "Started exploring Data Engineering"],
+  ["e5a3c1", "Built ShopFlow Analytics ETL pipeline"],
+  ["HEAD", "Preparing for Data Engineer opportunities"],
 ];
 
 export const stack = [
   {
     heading: "Languages",
     pills: [
-      { name: "Java" },
       { name: "Python" },
-      { name: "JavaScript" },
       { name: "SQL" },
+      { name: "Java" },
+      { name: "JavaScript" },
       { name: "HTML" },
       { name: "CSS" },
     ],
   },
   {
-    heading: "Frontend",
+    heading: "Data Engineering",
     pills: [
-      { name: "React" },
-      { name: "Tailwind CSS" },
-      { name: "HTML5" },
-      { name: "CSS3" },
+      { name: "ETL Pipelines" },
+      { name: "Pandas" },
+      { name: "NumPy" },
+      { name: "Data Cleaning" },
+      { name: "Data Validation" },
+      { name: "Medallion Architecture" },
     ],
+  },
+  {
+    heading: "Frontend",
+    pills: [{ name: "React" }, { name: "Tailwind CSS" }, { name: "Vite" }],
   },
   {
     heading: "Backend",
     pills: [
       { name: "FastAPI" },
-      { name: "REST API" },
+      { name: "REST APIs" },
       { name: "JWT" },
       { name: "SQLAlchemy" },
       { name: "Pydantic" },
@@ -129,11 +117,12 @@ export const stack = [
   },
   {
     heading: "Database",
-    pills: [{ name: "PostgreSQL" }],
+    pills: [{ name: "PostgreSQL" }, { name: "SQL" }],
   },
   {
-    heading: "Tools",
+    heading: "Cloud & Tools",
     pills: [
+      { name: "AWS (Learning)" },
       { name: "Git" },
       { name: "GitHub" },
       { name: "Docker" },
@@ -145,24 +134,32 @@ export const stack = [
 
 export const projects = [
   {
+    title: "ShopFlow Analytics",
+    desc: "An end-to-end e-commerce data engineering project using the Brazilian Olist dataset. Implements data ingestion, profiling, validation, and Bronze, Silver, and Gold transformations to create analytics-ready datasets.",
+    stack: ["Python", "Pandas", "SQL", "ETL", "Medallion Architecture"],
+    tag: "Data Engineering",
+    year: "2026",
+    link: "https://github.com/MokshManral/ShopFlow",
+  },
+  {
     title: "TailorCV",
-    desc: "A resume optimization platform that helps users tailor their CVs for specific roles by improving relevance, structure, and presentation.",
-    stack: ["React", "FastAPI", "PostgreSQL", "JWT", "Tailwind CSS"],
-    tag: "Productivity Tool",
+    desc: "An AI-powered resume tailoring platform that analyzes resumes against job descriptions, identifies matching and missing keywords, generates improvement suggestions, and helps users create role-specific resumes.",
+    stack: ["React", "FastAPI", "Gemini API", "Python", "Tailwind CSS"],
+    tag: "AI Full Stack Product",
     year: "2026",
     link: "https://tailor-cv-jet.vercel.app/",
   },
   {
-    title: "Image Denoising Toolkit",
-    desc: "A computer-vision project that compares Gaussian, Median, and Bilateral filtering techniques for noise reduction and visual quality analysis.",
-    stack: ["Python", "OpenCV", "NumPy", "Matplotlib"],
-    tag: "Computer Vision",
+    title: "EcoCycle",
+    desc: "A smart waste management platform focused on waste segregation, recycling recommendations, e-waste management, and streamlined waste collection workflows.",
+    stack: ["React", "FastAPI", "Python", "Firebase", "AWS", "Tailwind CSS"],
+    tag: "Sustainability Platform",
     year: "2026",
-    link: "https://github.com/MokshManral/NoiseRemoval",
+    link: "https://main.d1cxpw7q8iu6oo.amplifyapp.com/",
   },
   {
-    title: "CareerBridge",
-    desc: "An AI-assisted internship tracker for resume matching, job tracking, account management, and actionable application insights for students.",
+    title: "SupportSphere",
+    desc: "A role-based customer support and ticket management platform designed to streamline customer query handling. It enables admins to manage support operations, assign tickets to employees, track issue status, and monitor resolution workflows.",
     stack: [
       "React",
       "FastAPI",
@@ -173,122 +170,82 @@ export const projects = [
     ],
     tag: "Full Stack Product",
     year: "2026",
-    link: "https://github.com/MokshManral/CareerBridge",
+    link: "https://support-sphere-wine.vercel.app/                                           ",
   },
 ];
 
 export const learningFeed = {
-  month: "July 2026",
+  month: "November 2026",
   commits: 7,
-  author: "moksh",
+  author: "MokshManral",
   updates: [
-    "Built JWT authentication with FastAPI",
-    "Integrated PostgreSQL using SQLAlchemy",
-    "Learned Docker basics",
-    "Built CareerBridge backend",
-    "Improved React component architecture",
-    "Solved LeetCode problems consistently",
-    "Started learning Data Engineering",
+    "Built an e-commerce ETL pipeline using Python and Pandas",
+    "Implemented Bronze, Silver and Gold data layers",
+    "Performed data profiling and validation",
+    "Created customer, seller and sales analytics datasets",
+    "Worked with real-world Olist transactional data",
+    "Improved SQL and data transformation skills",
+    "Exploring AWS data engineering services",
   ],
 };
 
 export const interests = [
-  "Full Stack Development",
-  "Backend Engineering",
-  "Artificial Intelligence",
   "Data Engineering",
+  "Backend Engineering",
+  "Python Development",
+  "ETL Pipeline Development",
+  "AWS & Cloud Technologies",
+  "Artificial Intelligence",
+  "Database Systems",
   "Software Architecture",
   "Open Source",
-  "Startups",
   "Problem Solving",
 ];
 
 export const whyWorkWithMe = {
   points: [
-    "I enjoy learning new technologies quickly",
-    "I prefer building complete projects over watching tutorials",
-    "I value writing clean, maintainable code",
-    "I continuously improve through hands-on practice",
-    "I enjoy solving challenging programming problems",
+    "I enjoy learning technologies by building practical projects",
+    "I focus on understanding how systems work behind the scenes",
+    "I value clean, maintainable and reliable code",
+    "I enjoy working with real-world datasets and solving data problems",
+    "I continuously improve through experimentation and hands-on practice",
   ],
+
   quote:
-  "Every project is an opportunity to learn something new, write cleaner code, and become a better engineer.",
+    "I believe the best way to become an engineer is to build real things, understand the problems behind them, and keep improving with every iteration.",
 };
 
 export const currentLearning = [
-  "Advanced React",
-  "Backend Architecture",
+  "Advanced Python",
+  "SQL and Query Optimization",
   "Data Engineering Fundamentals",
-  "SQL Optimization",
+  "ETL Pipeline Development",
+  "AWS S3",
+  "AWS Glue",
+  "Amazon Athena",
+  "Data Modeling",
   "Docker",
-  "Authentication Systems",
   "System Design Basics",
-  "Data Structures & Algorithms",
-];
-
-export const skills = [
-  {
-    cat: "Languages",
-    items: [
-      ["Java", 92],
-      ["JavaScript", 90],
-      ["Python", 88],
-    ],
-  },
-  {
-    cat: "Frontend",
-    items: [
-      ["React", 92],
-      ["HTML/CSS", 95],
-      ["Tailwind CSS", 90],
-    ],
-  },
-  {
-    cat: "Backend",
-    items: [
-      ["FastAPI", 88],
-      ["SQLAlchemy", 85],
-      ["REST APIs", 90],
-    ],
-  },
-  {
-    cat: "Database & Tools",
-    items: [
-      ["PostgreSQL", 84],
-      ["Git & GitHub", 90],
-      ["Docker", 75],
-    ],
-  },
-];
-
-export const futureGoals = [
-  "Master System Design",
-  "Become a Backend Engineer",
-  "Learn Cloud Technologies (AWS)",
-  "Contribute to Open Source",
-  "Build SaaS Products",
-  "Crack Software Engineering Interviews",
-  "Become Proficient in Data Engineering",
 ];
 
 export const funFacts = [
   "Coffee-powered coding sessions",
   "Love building projects from scratch",
-  "Enjoy debugging challenging problems",
-  "Always learning something new",
-  "Passionate about creating useful software",
+  "Enjoy exploring how data moves through systems",
+  "Prefer learning by implementing",
+  "Always experimenting with new technologies",
 ];
 
 export const contactData = {
-  title: "Lets Connect",
-  
+  title: "Let's Connect",
+
   heading: {
     line1: "Let's build",
-    highlight: "great",
-    line2: "things",
+    highlight: "something",
+    line2: "meaningful",
     line3: "together.",
   },
-  
+
   links: [
     {
       label: "mokshmanral628@gmail.com",
@@ -299,7 +256,7 @@ export const contactData = {
       href: "https://github.com/MokshManral",
     },
     {
-      label: "linkedin.com/in/mokshmanral",
+      label: "linkedin.com/in/mokshsingh",
       href: "https://www.linkedin.com/in/mokshsingh/",
     },
   ],
@@ -307,23 +264,28 @@ export const contactData = {
 
 export const faqData = [
   {
-    question: "Are you currently looking for internships?",
+    question: "Are you currently looking for opportunities?",
     answer:
-    "Yes, I'm actively seeking Software Engineering, Backend, and Full Stack internship opportunities.",
+      "Yes, I'm actively looking for entry-level Data Engineering, Backend Development, and Software Engineering internship opportunities.",
   },
   {
-    question: "What technologies do you enjoy working with?",
+    question: "What technologies do you primarily work with?",
     answer:
-    "React, FastAPI, PostgreSQL, Java, and Python.",
+      "Python, SQL, Pandas, FastAPI, PostgreSQL, React, and Git. I'm currently expanding my knowledge of AWS.",
   },
   {
-    question: "What are you currently learning?",
+    question: "What are you currently building?",
     answer:
-    "Data Engineering, scalable backend development, Docker, and advanced DSA.",
+      "ShopFlow Analytics, an e-commerce data engineering pipeline built around real-world transactional data using Medallion Architecture.",
   },
   {
-    question: "Do you enjoy backend or frontend more?",
+    question: "Are you more interested in frontend or backend development?",
     answer:
-    "While I enjoy full-stack development, I'm increasingly interested in backend engineering and designing scalable systems.",
+      "I have full-stack development experience, but my current focus is on Data Engineering, backend systems, data pipelines, and cloud technologies.",
+  },
+  {
+    question: "What are your career goals?",
+    answer:
+      "My immediate goal is to become job-ready for an entry-level Data Engineer role, gain practical industry experience, and build scalable data solutions.",
   },
 ];
